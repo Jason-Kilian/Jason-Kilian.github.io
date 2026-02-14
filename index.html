@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jason Kilian - Web Developer</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- Devicons for Tech Stack -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- Font Awesome for Services -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
@@ -27,29 +42,28 @@
       </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero section">
       <div class="container">
         <span class="hero-badge">Available for freelance work</span>
-
         <h1>
           Hello, I’m <span class="hero-name">Jason Kilian</span><br />
           Web Developer
         </h1>
-
         <p>
           I specialize in building clean, modern web applications using HTML,
           CSS, JavaScript, Node.js, React, and PHP.
         </p>
-
         <div class="hero-buttons">
           <a href="#contact" class="btn">Get in Touch</a>
-          <a href="mailto:your-email@example.com" class="btn-outline"
+          <a href="mailto:kilianjason@gmail.com" class="btn-outline"
             >Email Me</a
           >
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section fade-in">
       <div class="container">
         <h2>About Me</h2>
@@ -66,26 +80,46 @@
       <div class="container">
         <h2>Tech Stack</h2>
         <div class="tech-grid">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Node.js</span>
-          <span>React</span>
-          <span>PHP</span>
+          <div class="tech-item">
+            <i class="devicon-html5-plain colored"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-css3-plain colored"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-react-original colored"></i>
+            <p>React</p>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-php-plain colored"></i>
+            <p>PHP</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES / WHAT I DO -->
+    <!-- SERVICES -->
     <section id="services" class="section fade-in">
       <div class="container">
         <h2>What I Do</h2>
         <div class="services-grid">
           <div class="card">
+            <i class="fas fa-paint-brush icon"></i>
             <h3>Web Design</h3>
             <p>Creating clean, modern UI/UX for websites and web apps.</p>
           </div>
           <div class="card">
+            <i class="fas fa-code icon"></i>
             <h3>Front-end Development</h3>
             <p>
               Building responsive and interactive web applications with React
@@ -93,6 +127,7 @@
             </p>
           </div>
           <div class="card">
+            <i class="fas fa-server icon"></i>
             <h3>Back-end Development</h3>
             <p>
               Developing server-side applications with Node.js and PHP for
@@ -117,28 +152,6 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO (placeholder, commented) -->
-    <!--
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <p>My completed projects will appear here once ready.</p>
-      <div class="portfolio-grid">
-        <div class="card">
-          <img src="assets/project1.png" alt="Project 1 Screenshot">
-          <h3>Project Title</h3>
-          <p>Short description of the project.</p>
-        </div>
-        <div class="card">
-          <img src="assets/project2.png" alt="Project 2 Screenshot">
-          <h3>Project Title</h3>
-          <p>Short description of the project.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
-
     <!-- CONTACT -->
     <section id="contact" class="section fade-in">
       <div class="container">
@@ -149,7 +162,10 @@
         </p>
         <div class="hero-buttons">
           <a href="mailto:kilianjason@gmail.com" class="btn">Email Me</a>
-          <a href="https://wa.me/+27798887156" target="_blank" class="btn-outline"
+          <a
+            href="https://wa.me/+27798887156"
+            target="_blank"
+            class="btn-outline"
             >WhatsApp</a
           >
         </div>
@@ -162,5 +178,3 @@
     </footer>
   </body>
 </html>
-
-
