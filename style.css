@@ -1,6 +1,4 @@
-/* =========================
-   ROOT VARIABLES
-========================= */
+/* ROOT VARIABLES */
 :root {
   --accent: #3b82f6;
   --accent-hover: #2563eb;
@@ -10,9 +8,7 @@
   --border-light: #e5e7eb;
 }
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* =========================
-   GLOBAL
-========================= */
+/* GLOBAL */
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg-light);
@@ -39,9 +33,7 @@ body {
   padding: 4rem 1.5rem;
 }
 
-/* =========================
-   HEADER / NAV
-========================= */
+/* HEADER / NAV */
 .header {
   position: sticky;
   top: 0;
@@ -91,16 +83,14 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 .hero {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center; /* center content horizontally */
+  justify-content: center;
   background: linear-gradient(to bottom, #ffffff, #f1f5f9);
-  text-align: center; /* center text */
+  text-align: center;
   padding: 0 1.5rem;
 }
 
@@ -109,6 +99,10 @@ nav a:hover::after {
   max-width: 700px;
   line-height: 1.2;
   margin: 1rem auto 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.4s;
 }
 
 .hero p {
@@ -118,6 +112,10 @@ nav a:hover::after {
   font-size: 1.1rem;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .hero-buttons {
@@ -126,6 +124,10 @@ nav a:hover::after {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.8s;
 }
 
 .hero-name {
@@ -141,11 +143,13 @@ nav a:hover::after {
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.2s;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 .section {
   background: var(--bg-light);
   border-top: 1px solid var(--border-light);
@@ -178,9 +182,7 @@ nav a:hover::after {
   font-size: 1.05rem;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/*BUTTONS */
 a.btn {
   display: inline-block;
   background: var(--accent);
@@ -199,7 +201,7 @@ a.btn {
 
 a.btn:hover {
   background: var(--accent-hover);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
 }
 
@@ -224,13 +226,11 @@ a.btn-outline:hover {
   background: var(--accent);
   color: #ffffff !important;
   border-color: var(--accent);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
 }
 
-/* =========================
-   TECH STACK & CARDS
-========================= */
+/* TECH STACK & CARDS */
 .tech-grid,
 .services-grid,
 .portfolio-grid {
@@ -281,18 +281,14 @@ a.btn-outline:hover {
   margin-bottom: 15px;
 }
 
-/* =========================
-   PROCESS LIST
-========================= */
+/* PROCESS LIST */
 .process-list {
   margin-top: 1.5rem;
   list-style-position: inside;
   color: var(--text-dark);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 2rem;
@@ -300,9 +296,7 @@ a.btn-outline:hover {
   color: var(--text-muted);
 }
 
-/* =========================
-   ANIMATIONS
-========================= */
+/* ANIMATIONS */
 .fade-in {
   animation: fadeUp 0.8s ease forwards;
 }
@@ -318,9 +312,18 @@ a.btn-outline:hover {
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -335,12 +338,14 @@ a.btn-outline:hover {
     font-size: 2.1rem;
   }
 
-    .logo {
+  .logo {
     height: 48px;
   }
 }
 
-   case-study-card {
+/* CASE STUDY */
+
+.case-study-card {
   text-align: left;
   max-width: 500px;
 }
