@@ -334,3 +334,55 @@ a.btn-outline:hover {
   .hero h1 {
     font-size: 2.1rem;
   }
+
+   case-study-card {
+  text-align: left;
+  max-width: 500px;
+}
+
+.case-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-light);
+}
+
+.case-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  color: var(--text-dark);
+}
+
+.case-list li {
+  margin-bottom: 0.4rem;
+}
+
+.testimonial {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.case-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
