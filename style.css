@@ -335,6 +335,11 @@ a.btn-outline:hover {
     font-size: 2.1rem;
   }
 
+    .logo {
+    height: 48px;
+  }
+}
+
    case-study-card {
   text-align: left;
   max-width: 500px;
