@@ -235,7 +235,8 @@ a.btn-outline:hover {
 .services-grid,
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+align-items: start;
   gap: 1rem;
   margin-top: 2rem;
   justify-items: center;
@@ -347,7 +348,7 @@ a.btn-outline:hover {
 
 .case-study-card {
   text-align: left;
-  max-width: 500px;
+  width: 100%;
 }
 
 .case-img {
